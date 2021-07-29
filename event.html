@@ -1,0 +1,125 @@
+<html>
+    <title>Registration</title>
+    <body bgcolor="pink" >
+        <div style="background-image: url('1583747992phpzaxKKK.jpeg');"></div>
+        <h1 align="center" style="bold" style="ALGERIAN">EVENT REGISTRATION</h1>
+        <center>
+        <form method="get" style="align-content: space-around;" action="lastpage.html">
+            <fieldset>
+            <legend>Registration form</legend>
+        <table>
+            
+            <tr>
+                <td>Enter the name</td>
+                <td><input type="text" name="Student_ name" placeholder="Enter your name" pattern="[A-za-z]{*}" required/></td>
+            </tr>
+            <tr>
+                <td>Enter the DOB</td>
+                <td><input type="date" name='DOB' ></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" value="male"/>male
+                <input type="radio" name="gender" value="female"/>female
+                <input type="radio" name="gender" value="other"/>others</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email ID" required/></td>
+            </tr>
+            <tr>
+                <td>Mobile number</td>
+                <td><input type="number" name="Mobile" pattern="[1-9]{*}" required/></td>
+            </tr>
+            <tr>
+                <td> ADDRESS :</td>
+                <td><textarea rows="5" col="15" placeholder="Type your adderss"></textarea></td>
+                </tr>
+            <tr>
+                <td>State</td>
+                <td>
+                <select name="state">
+                    <option value="AP">Andhra Pradesh</option>
+                    <option value="AR">Arunachal Pradesh</option>
+                    <option value="AS">Assam</option>
+                    <option value="BR">Bihar</option>
+                    <option value="CG">Chhattisgarh</option>
+                    <option value="GA">Goa</option>
+                    <option value="GJ">Gujarat</option>
+                    <option value="HR">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="JK">Jammu and Kashmir</option>
+                    <option value="JH">Jharkhand</option>
+                    <option value="KA">Karnataka</option>
+                    <option value="KL">Kerala</option>
+                    <option value="WB">West Bengal</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="MH">Maharashtra</option>
+                    <option value="MN">Manipur</option>
+                    <option value="ML">Meghalaya</option>
+                    <option value="MZ">Mizoram</option>
+                    <option value="NL">Nagaland</option>
+                    <option value="OR">Orissa</option>
+                    <option value="PB">Punjab</option>
+                    <option value="RJ">Rajasthan</option>
+                    <option value="SK">Sikkim</option>
+                    <option value="TN" selected>Tamil Nadu</option>
+                    <option value="TE">Telangana</option>
+                    <option value="TR">Tripura</option>
+                    <option value="UK">Uttarakhand</option>
+                    <option value="UP">Uttar Pradesh</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>pincode</td>
+                <td><input type="number" name="pincode" pattern="[1-9]{6}" required/></td>
+            </tr>
+            <tr>
+                <td>Event</td>
+                <td>
+                    <input type="checkbox" name="Event" value="Technical Event"/>
+                <select name="Event" multiple>
+                    <option value="TE" selected>Technical Event</option>
+                    <option value="CB">code breaker</option>
+                    <option value="PP">paper presentation</option>
+                    <option value="IP">idea presentation</option>
+                    <option value="PRP">project presentation</option>
+                    <option value="DE">debugging</option>
+                </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="Event" value="Non-Technical Event"/>
+                <select name="Event" multiple>
+                    <option value="NTE" selected>Non-Technical Event</option>
+                    <option value="Sp">solo performance</option>
+                    <option value="SA">sktch art</option>
+                    <option value="BP">Brushless painting</option>
+                    <option value="SuP">Sudoko</option>
+                    <option value="IPL">IPL auction</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>dept</td>
+                <td>
+                <select name="Dept">
+                    <option value="IT">Information Technology</option>
+                    <option value="CSE" selected>Computer Science </option>
+                    <option value="FT">Food Tech</option>
+                </select>
+                </td>
+            </tr>
+            <td>Upload Resume</td>
+              <td><input type="file" name="file"/></td>
+          </tr>
+            <tr>
+                <td><input type="submit" name="submit"></td>
+                <td><input type="reset" name"reset"></td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+</center>
+    </body>
+</html>
