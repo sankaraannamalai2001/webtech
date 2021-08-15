@@ -4,18 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login | cybrary</title>
 </head>
 <body>
-    <h1>Login</h1>
-    <div>
+    <div class="top"><img class="logo"src="https://images.ctfassets.net/kvf8rpi09wgk/6HtXDpiYT7GMU8yp0DS4Dy/5b42c213353afb410ac8e52e7db7c77f/cybrary_logo_black.svg?w=250" alt=""></div>
+    <h1 style="text-align:center;font-size:45px;margin-top: 0px;font-weight:900;">Sign in</h1>
+    <p style="margin-left:500px;font-size: 12px;font-weight:400">Required field are marked with a <span style="color:#E2037A">*</span></p>
+    <div class="content">
         <form action="/website.html">
-            <label for="name">Name</label>
-            <input type="text" id="name">
-            <br>
-            <label for="password">Password</label>
-            <input type="password" id="password">
+            <label for="name" style="font-size:25px;text-align:left;font-weight:700;margin-left:45px;">Email<span style="color:#E2037A">*</span></label><br>
+            <input type="text" id="email" class="email">
+            <br><br>
+            <label for="password" style="font-size:25px;font-weight:700;margin-left:45px;">Password<span style="color:#E2037A">*</span></label><br>
+            <input type="password" id="password" class="email">
+            <button type="submit" class="submit">Sign up</button>
         </form> 
     </div>
+    <footer>
+        <p>© 2021 Sankar-Cybrary <a href="https://www.cybrary.it/terms-service/">Terms of Service</a>           <a href="https://www.cybrary.it/privacy-policy/">Privacy Policy</a><a href="https://status.cybrary.it/">Service Status</a></p>
+    </footer>
 </body>
 </html>
+<style>
+    .top{
+        height:120px;
+        width:100%;
+        text-align: center;
+    }
+    .logo{
+        height:120px;
+        width:250px;
+    }
+    body{
+        font-family: Inter,ui-sans-serif,system-ui;
+    }
+    .content{
+        margin-left:500px;
+    }
+    .email{
+        width:500px;
+        height:40px;
+    }
+    input{
+        padding-left:20px;
+    }
+    .submit{
+        margin-top:50px;
+        width:525px;
+        height:40px;
+        color:white;
+        background-color: #E2037A;
+        border:none;
+    }
+    .submit:hover{
+        color:#E2037A;
+        background-color: white;
+    }
+    footer{
+        margin-top:40px;
+        height:100px;
+        background-color: rgba(245,245,245,0.8);
+        text-align:center;
+    }
+    footer p a{
+        text-decoration: none;
+        color:black;
+        margin-left: 20px;
+    }
+    footer p a:hover{
+        color:#E2037A;
+    }
+    footer p{
+        color:grey;
+    }
+</style>

@@ -31,13 +31,7 @@ body{
     padding:0%;
     font-family: Inter,ui-sans-serif,system-ui,Arial, Helvetica, sans-serif;
 }
-.img{
-    background-image: url("https://images.ctfassets.net/kvf8rpi09wgk/69ejIhaHJLsPv22Qw9ED76/448c97feba7eb23433aaa8c5565e93ed/LOHP_.png?w=1862&h=590&q=65&fm=webp") ;
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;
-    height: 120vh;
-}
+
 .content{
    
     
@@ -91,4 +85,8 @@ footer{
 .logosdiv{
     
     margin-top:40px;
+}
+.email{
+    width:300px;
+    height:30px;
 }
