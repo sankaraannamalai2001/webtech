@@ -1,0 +1,94 @@
+
+header li a{
+    text-decoration:none;
+    color:white;
+}
+header li a:hover{
+    color:#E2037A;
+}
+header li{
+    display:inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 15px;
+    margin-left:10px;
+    font-weight: 500;
+    margin-bottom:0px;
+    margin-top:5px;
+   
+}
+header ul{
+    background-color: black;
+    padding:10px;
+    
+    padding-bottom: 0;
+    margin-top:0;
+    margin-bottom:0px;
+}
+
+body{
+    margin:0%;
+    padding:0%;
+    font-family: Inter,ui-sans-serif,system-ui,Arial, Helvetica, sans-serif;
+}
+.img{
+    background-image: url("https://images.ctfassets.net/kvf8rpi09wgk/69ejIhaHJLsPv22Qw9ED76/448c97feba7eb23433aaa8c5565e93ed/LOHP_.png?w=1862&h=590&q=65&fm=webp") ;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    height: 120vh;
+}
+.content{
+   
+    
+    color:white;
+    
+}
+footer{
+    position:absolute;
+    bottom:inherit;
+    margin-left:120px;
+    margin-top:50px;
+    color:white;
+}
+.login{
+    float:right;
+}
+.big{
+    font-size: 45px;
+    color:white;
+  
+    font-weight:900;
+    margin-top:0px;
+    margin-bottom:0px;
+    display:inline-block;
+    height:40px;
+}
+.list{
+    color:white;
+    font-size:15px;
+    
+    margin-top:25px;
+}
+.list li{
+    margin-bottom:18px;
+}
+.buttons{
+   
+    margin-top:40px;
+}
+.line{
+    
+    margin-top: 40px;
+    color:white;
+    
+}
+.logos{
+    height:40px;
+    width:120px;
+    margin-left:10px;
+}
+.logosdiv{
+    
+    margin-top:40px;
+}
