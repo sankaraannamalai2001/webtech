@@ -1,0 +1,16 @@
+.icons{
+    float:right !important;
+}
+.search{
+    float:right !important;
+}
+body{
+    font-family: "PTSansRegular","Open Sans",Arial,Helvetica,sans-serif, !important;
+}
+.bar{
+    font-weight:bolder!important;
+}
+.box{
+    height:484px !important;
+    width:360px !important;
+}
