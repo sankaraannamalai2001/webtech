@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 offset-3 mt-2">
+          <h2>CGPA CALCULATION</h2>
+          <form action="#">
+            <label for="gpa1" class="form-label">GPA 1</label>
+            <input type="text" class="form-control" id="gpa1" name="gpa[]" />
+            <label for="gpa2" class="form-label">GPA 2</label>
+            <input type="text" class="form-control" id="gpa2" name="gpa[]" />
+            <label for="gpa3" class="form-label">GPA 3</label>
+            <input type="text" class="form-control" id="gpa3" name="gpa[]" />
+            <label for="gpa4" class="form-label">GPA 4</label>
+            <input type="text" class="form-control" id="gpa4" name="gpa[]" />
+            <label for="gpa5" class="form-label">GPA 5</label>
+            <input type="text" class="form-control" id="gpa5" name="gpa[]" />
+            <label for="gpa6" class="form-label">GPA 6</label>
+            <input type="text" class="form-control" id="gpa6" name="gpa[]" />
+            <label for="gpa7" class="form-label">GPA 7</label>
+            <input type="text" class="form-control" id="gpa7" name="gpa[]" />
+            <label for="gpa8" class="form-label">GPA 8</label>
+            <input type="text" class="form-control" id="gpa8" name="gpa[]" />
+            <button class="btn btn-primary mt-3" type="submit">RESULT</button>
+          </form>
+          <h3>CGPA:<span class="cgpa"></span></h3>
+        </div>
+      </div>
+    </div>
+    <script src="cgpa.js"></script>
+  </body>
+</html>
