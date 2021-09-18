@@ -10,36 +10,72 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>CGPA CALCULATION</title>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-6 offset-3 mt-2">
+        <div class="col-6 offset-3 my-3 new">
           <h2>CGPA CALCULATION</h2>
+          <h5>
+            Don't know your GPA yet, find out here
+            <button class="btn btn-primary">
+              <a href="gpa.html" style="text-decoration: none; color: white"
+                >>></a
+              >
+            </button>
+          </h5>
           <form action="#">
-            <label for="gpa1" class="form-label">GPA 1</label>
+            <label for="gpa1" class="form-label">GPA SEM 1</label>
             <input type="text" class="form-control" id="gpa1" name="gpa[]" />
-            <label for="gpa2" class="form-label">GPA 2</label>
+            <label for="gpa2" class="form-label">GPA SEM 2</label>
             <input type="text" class="form-control" id="gpa2" name="gpa[]" />
-            <label for="gpa3" class="form-label">GPA 3</label>
+            <label for="gpa3" class="form-label">GPA SEM 3</label>
             <input type="text" class="form-control" id="gpa3" name="gpa[]" />
-            <label for="gpa4" class="form-label">GPA 4</label>
+            <label for="gpa4" class="form-label">GPA SEM 4</label>
             <input type="text" class="form-control" id="gpa4" name="gpa[]" />
-            <label for="gpa5" class="form-label">GPA 5</label>
+            <label for="gpa5" class="form-label">GPA SEM 5</label>
             <input type="text" class="form-control" id="gpa5" name="gpa[]" />
-            <label for="gpa6" class="form-label">GPA 6</label>
+            <label for="gpa6" class="form-label">GPA SEM 6</label>
             <input type="text" class="form-control" id="gpa6" name="gpa[]" />
-            <label for="gpa7" class="form-label">GPA 7</label>
+            <label for="gpa7" class="form-label">GPA SEM 7</label>
             <input type="text" class="form-control" id="gpa7" name="gpa[]" />
-            <label for="gpa8" class="form-label">GPA 8</label>
+            <label for="gpa8" class="form-label">GPA SEM 8</label>
             <input type="text" class="form-control" id="gpa8" name="gpa[]" />
-            <button class="btn btn-primary mt-3" type="submit">RESULT</button>
+            <button class="btn btn-primary mt-3 sub" type="submit">
+              RESULT
+            </button>
           </form>
-          <h3>CGPA:<span class="cgpa"></span></h3>
+        </div>
+        <div class="col-3 mt-5">
+          <h3 class="new" style="margin-top: 300px">
+            CGPA: <span class="cgpa"></span>
+          </h3>
         </div>
       </div>
     </div>
     <script src="cgpa.js"></script>
   </body>
 </html>
+<style>
+  body {
+    font-family: "Poppins", sans-serif;
+    color: #05386b;
+    background-color: #5cdb95;
+  }
+  .new {
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #8ee4af;
+
+    /* background-image: linear-gradient(to top left, #39b385, #9be15d); */
+  }
+  .btn {
+    background-color: #05386b;
+    color: #edf5e1;
+  }
+  input {
+    background-color: #edf5e1 !important;
+    color: #05386b !important;
+  }
+</style>

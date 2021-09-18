@@ -1,4 +1,4 @@
-const resultBtn = document.querySelector("button");
+const resultBtn = document.querySelector(".sub");
 
 resultBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -15,5 +15,5 @@ function getValues() {
   }
 
   const cgpa = sum / count;
-  document.querySelector(".cgpa").textContent = cgpa;
+  document.querySelector(".cgpa").textContent = cgpa.toFixed(4);
 }
