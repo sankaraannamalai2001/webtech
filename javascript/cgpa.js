@@ -15,5 +15,6 @@ function getValues() {
   }
 
   const cgpa = sum / count;
-  document.querySelector(".cgpa").textContent = cgpa.toFixed(4);
+  if (isNaN(cgpa)) document.querySelector(".cgpa").textContent = "Wrong Input";
+  else document.querySelector(".cgpa").textContent = cgpa.toFixed(4);
 }

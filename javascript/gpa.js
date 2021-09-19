@@ -29,5 +29,6 @@ gpaBtn.addEventListener("click", (e) => {
       arr[3] * value4 +
       arr[4] * value5) /
     sum;
-  result.textContent = res.toFixed(2, 0);
+  if (isNaN(result)) result.textContent = "Wrong Input";
+  else result.textContent = res.toFixed(2, 0);
 });
