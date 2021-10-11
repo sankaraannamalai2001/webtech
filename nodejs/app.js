@@ -23,7 +23,7 @@ http
       // res.end(
       //   "<a href='/about'>About us</a><br><a href='/services'>Services</a><br><a href='/insight'>Insights</a><br><a href='/contact'>Contact</a></body></html>"
       // );
-    } else if (req.url == "/about") {
+    } else if (req.url == "/signin") {
       res.writeHead(200, { "Content-type": "text/html" });
       // res.write(
       //   "<html><body bgcolor='LavenderBlush' text='Navy'style='font-family: Arial, Helvetica, sans-serif;'>"
@@ -38,35 +38,40 @@ http
       // res.end(
       //   "<a href='/'>Home</a><br><a href='/services'>Services</a><br><a href='/insight'>Insights</a><br><a href='/contact'>Contact</a></body></html>"
       //);
-      fs.readFile("about.html", function (err, data) {
+      fs.readFile("signin.html", function (err, data) {
         res.writeHead(200, { "Content-Type": "text/html" });
         res.write(data);
         return res.end();
       });
     } else if (req.url == "/services") {
       res.writeHead(200, { "Content-type": "text/html" });
-      res.write(
-        "<html><body bgcolor='LavenderBlush' text='Navy'style='font-family: Arial, Helvetica, sans-serif;'>"
-      );
-      res.write(
-        "<h1>Sirius Services: Critical components of your project success</h1>"
-      );
+      fs.readFile("service.html", function (err, data) {
+        res.writeHead(200, { "Content-Type": "text/html" });
+        res.write(data);
+        return res.end();
+      });
+      // res.write(
+      //   "<html><body bgcolor='LavenderBlush' text='Navy'style='font-family: Arial, Helvetica, sans-serif;'>"
+      // );
+      // res.write(
+      //   "<h1>Sirius Services: Critical components of your project success</h1>"
+      // );
 
-      res.write(
-        "<p>Even the worlds top technologies wont do you much good if you don’t have the resources or expertise needed to successfully implement them as an optimally performing, cohesive solution.</p>"
-      );
-      res.write(
-        "<p>Thats why Sirius has built a world-class services organization around hundreds of recognized technology experts who specialize across all disciplines related to enterprise computing.</p>"
-      );
-      res.write(
-        "<p>Drawing on centuries of combined experience, these highly skilled, certified consultants can determine which technology products are best suited for your specific challenges, and then provide the services that will ensure the fastest return on your investment.</p>"
-      );
-      res.write(
-        "<p>Sirius also has a dedicated software team capable of helping companies evaluate, acquire and implement software solutions in the areas of commerce, business intelligence, information management, collaboration, identity and access management, business optimization, systems and storage management, and more.</p>"
-      );
-      res.end(
-        "<a href='/'>Home</a><br><a href='/about'>About us</a><br><a href='/insight'>Insights</a><br><a href='/contact'>Contact</a></body></html>"
-      );
+      // res.write(
+      //   "<p>Even the worlds top technologies wont do you much good if you don’t have the resources or expertise needed to successfully implement them as an optimally performing, cohesive solution.</p>"
+      // );
+      // res.write(
+      //   "<p>Thats why Sirius has built a world-class services organization around hundreds of recognized technology experts who specialize across all disciplines related to enterprise computing.</p>"
+      // );
+      // res.write(
+      //   "<p>Drawing on centuries of combined experience, these highly skilled, certified consultants can determine which technology products are best suited for your specific challenges, and then provide the services that will ensure the fastest return on your investment.</p>"
+      // );
+      // res.write(
+      //   "<p>Sirius also has a dedicated software team capable of helping companies evaluate, acquire and implement software solutions in the areas of commerce, business intelligence, information management, collaboration, identity and access management, business optimization, systems and storage management, and more.</p>"
+      // );
+      // res.end(
+      //   "<a href='/'>Home</a><br><a href='/about'>About us</a><br><a href='/insight'>Insights</a><br><a href='/contact'>Contact</a></body></html>"
+      // );
     } else if (req.url == "/contact") {
       res.writeHead(200, { "Content-type": "text/html" });
       fs.readFile("contact.html", function (err, data) {
